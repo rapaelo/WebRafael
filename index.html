@@ -1,28 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Sederhana</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Selamat Datang di Website Saya</h1>
-    <p>Ini adalah contoh halaman web sederhana dengan HTML dan CSS.</p>
-    
-    <img src="gambar.jpeg" alt="Contoh Gambar" class="foto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kopi Sulawesi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kopi Sulawesi</h1>
+      <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#menu">Menu</a>
+        <a href="#kontak">Kontak</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
 
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="#" method="post">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+    <main>
+      <section class="hero" id="beranda">
+        <h1>Kopi dari tanah Sulawesi</h1>
+        <p>
+          <h3>Biji kopi pilihan dari pegunungan Sulawesi, disangrai segar setiap
+          hari.</h3>
+        </p>
+      </section>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+      <section class="menu" id="menu">
+        <article class="item">
+          <img src="kopipahit.jpg" alt="Kopi Hitam" />
+          <h3>Kopi Hitam</h3>
+          <p>Rasa pekat dengan aroma rempah dan cokelat.</p>
+          <div class="beli">
+            <span class="harga">Rp35.000</span>
+            <button type="button">Beli</button>
+          </div>
+        </article>
 
-            <button type="submit">Masuk</button>
-        </form>
-    </div>
-</body>
+        <article class="item">
+          <img src="kopiaren.jpg" alt="Kopi Gula Aren" />
+          <h3>Kopi Gula Aren</h3>
+          <p>Manis lembut dengan keasaman yang seimbang.</p>
+          <div class="beli">
+            <span class="harga">Rp32.000</span>
+            <button type="button">Beli</button>
+          </div>
+        </article>
+
+
+        <article class="item">
+          <img src="kopisusu.jpg" alt="Kopi Susu" />
+          <h3>Kopi Susu</h3>
+          <p>Espresso dengan susu segar, pilihan paling populer.</p>
+          <div class="beli">
+            <span class="harga">Rp25.000</span>
+            <button type="button">Beli</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer id="kontak">
+      <p>Hubungi kami: @kopisulawesi.com</p>
+    </footer>
+  </body>
 </html>
